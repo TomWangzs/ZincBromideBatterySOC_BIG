@@ -1,0 +1,3 @@
+/Users/wangzesheng/CLionProjects/ZincBromideBatterySOC_BIG/build/CMakeFiles/ZincBromideBatterySOC_BIG.dir
+/Users/wangzesheng/CLionProjects/ZincBromideBatterySOC_BIG/build/CMakeFiles/edit_cache.dir
+/Users/wangzesheng/CLionProjects/ZincBromideBatterySOC_BIG/build/CMakeFiles/rebuild_cache.dir

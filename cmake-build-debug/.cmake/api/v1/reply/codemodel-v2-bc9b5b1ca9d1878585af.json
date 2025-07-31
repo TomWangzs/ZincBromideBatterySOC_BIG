@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ZincBromideBatterySOC_BIG",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ZincBromideBatterySOC_BIG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZincBromideBatterySOC_BIG-Debug-23c608b1b83b5bd3bef6.json",
+					"name" : "ZincBromideBatterySOC_BIG",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/wangzesheng/CLionProjects/ZincBromideBatterySOC_BIG/cmake-build-debug",
+		"source" : "/Users/wangzesheng/CLionProjects/ZincBromideBatterySOC_BIG"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
