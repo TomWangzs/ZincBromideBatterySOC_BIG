@@ -6,7 +6,7 @@
 |------|------|
 | **充电段：库伦积分 (CC)** | ΔSOC = I·Δt / (η<sub>C</sub> · C<sub>NOM</sub>) |
 | **放电段：LSTM + EKF** | LSTM 提供电压-SOC 非线性映射，EKF 自适应融合 & 离群抑制 |
-| **纯静态权重** | `weights.(h|cpp)` 在**编译期**链入，定位到 `.rodata` |
+| **纯静态权重** | `weights.h/weights.cpp` 在**编译期**链入，定位到 `.rodata` |
 | **零动态分配** | 上电即用，RAM 开销 < 4 KB；无 `malloc()` / 文件系统 |
 | **多路扩展** | 复制 `SOC_Estimator` 实例或自行封装结构体即可并行估算 |
 
