@@ -1,13 +1,6 @@
 
-> **为什么多了 `weights.cpp`？**  
-> 当权重非常大（> 64 KB）时，直接放在头文件会拖慢增量编译。可采用：  
-> 1. `weights.h` 仅保留 `extern const float …` 声明  
-> 2. `weights.cpp` 放实际 `const float … = { … };` 定义  
-> 3. `weights.cpp` 与 `hybrid_cc_lstm_ekf_soc_v3_ac5.cpp` 一并编译，链接器自动合并
 
----
-
-## 2. 关键特性
+## 1. 关键特性
 
 | 功能 | 说明 |
 |------|------|
@@ -19,23 +12,7 @@
 
 ---
 
-## 3. 编译配置
-
-| 选项                | 作用                    |
-|---------------------|-------------------------|
-| `--cpp11`           | 启用 C++11              |
-| `--no_rtti`         | 去 RTTI，减代码体积     |
-| `--no_exceptions`   | 去异常，兼容 Microlib   |
-| `-O2` / `-O3`       | 推荐开启优化            |
-
-**Keil uVision 5 设置**  
-1. Target → C/C++ (AC5)：勾选 `--cpp11`  
-2. Runtime：Microlib（如需极致尺寸）  
-3. 把 `soc_estimator/` 所有源文件加入同一 Target / Group  
-
----
-
-## 4. 快速体验
+## 2. 快速体验
 
 ```c
 #include <stdio.h>
